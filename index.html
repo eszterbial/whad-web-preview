@@ -6,13 +6,16 @@
     <title>whad — externý grafický team</title>
     <link rel="icon" type="image/svg+xml" href="./whad-logo.svg" />
     <meta name="description" content="Design, engineering and AI automation for the world's biggest brands." />
-    <script type="module" crossorigin src="./assets/index-2HCm04wg.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D2D_2xmK.css">
+    <script type="module" crossorigin src="./assets/index-DDpBxvAa.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D0ODsjB9.css">
   </head>
   <body>
     <div class="page">
+      <!-- flowing smoke background behind the whole top of the page -->
+      <canvas class="page-bg hero__bg" aria-hidden="true" data-hero-version="2"></canvas>
+      <!-- 6-column rules the masthead aligns to -->
+      <div class="grid-lines" aria-hidden="true" data-hero-version="2"><span></span><span></span><span></span><span></span><span></span><span></span></div>
       <!-- Grid lines behind the page content -->
-      <div class="grid-lines" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
 
       <!-- Nav: floating frosted bar -->
       <header class="nav" data-nav>
@@ -30,36 +33,36 @@
         </div>
       </header>
 
-      <!-- Hero: layered type around the 3D head (back type / head / front type / UI) -->
-      <section class="hero" data-hero>
-        <div class="hero__media" aria-hidden="true">
-          <canvas class="hero__bg"></canvas>
+      <!-- Hero V1: layered type around the 3D head (back type / head / front type / UI) -->
+      <section class="hero1" data-hero1 data-hero-version="1">
+        <div class="hero1__media" aria-hidden="true">
+          <canvas class="hero1__bg"></canvas>
         </div>
-        <div class="grid-lines" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="hero1__grid" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
 
         <h1 class="visually-hidden">Prenajmite si externý grafický tím</h1>
 
-        <div class="hero__type hero__type--back" data-layer="back" aria-hidden="true">
-          <span class="hero__word hero__word--1"><span>Prenajmite si</span></span>
-          <span class="hero__word hero__word--2"><span>externý</span></span>
+        <div class="hero1__type hero1__type--back" data-layer="back" aria-hidden="true">
+          <span class="hero1__word hero1__word--1"><span>Prenajmite si</span></span>
+          <span class="hero1__word hero1__word--2"><span>externý</span></span>
         </div>
 
-        <canvas class="hero__three" data-layer="head"></canvas>
+        <canvas class="hero1__three" data-layer="head"></canvas>
 
-        <div class="hero__type hero__type--front" data-layer="front" aria-hidden="true">
-          <span class="hero__word hero__word--3"><span>grafický</span></span>
+        <div class="hero1__type hero1__type--front" data-layer="front" aria-hidden="true">
+          <span class="hero1__word hero1__word--3"><span>grafický</span></span>
         </div>
-        <div class="hero__type hero__type--accent" data-layer="front" aria-hidden="true">
-          <span class="hero__word hero__word--4"><span>tím</span></span>
+        <div class="hero1__type hero1__type--accent" data-layer="front" aria-hidden="true">
+          <span class="hero1__word hero1__word--4"><span>tím</span></span>
         </div>
 
-        <div class="hero__ui" data-layer="ui">
-          <span class="tag tag--live hero__tag hero__tag--a">Limitovaná kapacita pre zachovanie kvality</span>
-          <span class="tag hero__tag hero__tag--b">Bez viazanosti</span>
+        <div class="hero1__ui" data-layer="ui">
+          <span class="hero1__tag hero1__tag--live hero1__tag--a">Limitovaná kapacita pre zachovanie kvality</span>
+          <span class="hero1__tag hero1__tag--b">Bez viazanosti</span>
 
-          <div class="hero__aside">
-            <p class="hero__lead">Fixná cena, ktorú môžete pozastaviť alebo zrušiť kedykoľvek. Bez viazanosti.</p>
-            <div class="hero__actions">
+          <div class="hero1__aside">
+            <p class="hero1__lead">Fixná cena, ktorú môžete pozastaviť alebo zrušiť kedykoľvek. Bez viazanosti.</p>
+            <div class="hero1__actions">
               <a href="#contact" class="hero-pill">
                 <span class="hero-pill__icon" aria-hidden="true">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -70,7 +73,48 @@
             </div>
           </div>
 
-          <p class="hero__claim">Grafika presne vtedy, keď ju potrebujete.<br />Nie vtedy, keď má grafik čas.</p>
+          <p class="hero1__claim">Grafika presne vtedy, keď ju potrebujete.<br />Nie vtedy, keď má grafik čas.</p>
+        </div>
+      </section>
+
+      <!-- Hero V2: studio-style masthead -->
+      <section class="hero" data-hero data-hero-version="2">
+        <div class="hero__top">
+          <p class="hero__note">Design &amp; Branding studio<br />Limitovaná kapacita pre zachovanie kvality</p>
+          <a href="#" class="hero__logo" aria-label="whad"><span class="logo"></span></a>
+          <p class="hero__note hero__note--right">Fixná cena, bez viazanosti<br /><a href="mailto:hello@whad.sk">hello@whad.sk</a></p>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="line"><span class="line__inner">Prenajmite si</span></span>
+          <span class="line"><span class="line__inner"><em>externý</em> grafický tím</span></span>
+        </h1>
+
+        <nav class="hero__nav" aria-label="Sekcie">
+          <a href="#services"><sup>01</sup>Ako to funguje</a>
+          <a href="#promise"><sup>02</sup>Výhody</a>
+          <a href="#work"><sup>03</sup>Práce</a>
+          <a href="#contact"><sup>04</sup>Cenník</a>
+          <a href="#references"><sup>05</sup>FAQ</a>
+          <a href="#contact"><sup>06</sup>Online meeting</a>
+        </nav>
+      </section>
+
+      <!-- Stage: the statue sits in a framed window that opens to full screen on scroll -->
+      <section class="stage" data-stage data-hero-version="2">
+        <div class="stage__sticky">
+          <canvas class="hero__three"></canvas>
+          <p class="stage__side stage__side--l" data-stage-side>Grafika presne vtedy, keď ju potrebujete. Nie vtedy, keď má grafik čas.</p>
+          <p class="stage__side stage__side--r" data-stage-side>Fixná cena, ktorú môžete pozastaviť alebo zrušiť kedykoľvek.</p>
+          <div class="stage__cta" data-stage-cta>
+            <a href="#contact" class="hero-pill">
+              <span class="hero-pill__icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+              Cenník
+            </a>
+            <a href="#contact" class="hero-pill hero-pill--ghost">Online meeting</a>
+          </div>
         </div>
       </section>
 
@@ -316,6 +360,18 @@
         <div class="footer__wordmark" aria-hidden="true"></div>
       </footer>
     </div>
+
+    <!-- Hero version switcher: a pull-out tab on the right edge (for presenting the proposals) -->
+    <aside class="version-tab" data-version-tab>
+      <button class="version-tab__handle" type="button" aria-expanded="false" aria-controls="version-tab-panel">
+        Hero <b data-version-current>V2</b>
+      </button>
+      <nav class="version-tab__panel" id="version-tab-panel" aria-label="Verzia hero sekcie">
+        <span class="version-tab__label">Hero verzia</span>
+        <a href="?v=1" data-version="1">V1</a>
+        <a href="?v=2" data-version="2">V2</a>
+      </nav>
+    </aside>
 
   </body>
 </html>
