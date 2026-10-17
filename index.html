@@ -6,8 +6,8 @@
     <title>whad — externý grafický team</title>
     <link rel="icon" type="image/svg+xml" href="./whad-logo.svg" />
     <meta name="description" content="Design, engineering and AI automation for the world's biggest brands." />
-    <script type="module" crossorigin src="./assets/index-Cv1JM5k2.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BUifia-t.css">
+    <script type="module" crossorigin src="./assets/index-CPCrD-vB.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CyYbPxmS.css">
   </head>
   <body>
     <div class="page">
@@ -15,10 +15,12 @@
       <canvas class="page-bg hero__bg" aria-hidden="true" data-hero-version="2"></canvas>
       <!-- 6-column rules the masthead aligns to -->
       <div class="grid-lines" aria-hidden="true" data-hero-version="2"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <!-- the statue: fixed behind the content for the whole page, sections scroll over it -->
+      <canvas class="hero__three" data-hero-version="2"></canvas>
       <!-- Grid lines behind the page content -->
 
-      <!-- Nav: floating frosted bar -->
-      <header class="nav" data-nav>
+      <!-- Nav (V1): floating frosted bar -->
+      <header class="nav" data-nav data-hero-version="1">
         <div class="nav__bar">
           <a href="#" class="nav__logo" aria-label="whad"><span class="logo"></span></a>
           <nav class="nav__links" aria-label="Hlavná navigácia">
@@ -89,21 +91,23 @@
           <span class="line"><span class="line__inner">Prenajmite si</span></span>
           <span class="line"><span class="line__inner"><em>externý</em> grafický tím</span></span>
         </h1>
-
-        <nav class="hero__nav" aria-label="Sekcie">
-          <a href="#services"><sup>01</sup>Ako to funguje</a>
-          <a href="#promise"><sup>02</sup>Výhody</a>
-          <a href="#work"><sup>03</sup>Práce</a>
-          <a href="#contact"><sup>04</sup>Cenník</a>
-          <a href="#references"><sup>05</sup>FAQ</a>
-          <a href="#contact"><sup>06</sup>Online meeting</a>
-        </nav>
       </section>
 
-      <!-- Stage: the statue sits in a framed window that opens to full screen on scroll -->
+      <!-- Section links under the masthead; they scroll up into the row of the
+           (fixed) logo and stick there for the rest of the page -->
+      <nav class="hero__nav" data-hero-nav data-hero-version="2" aria-label="Sekcie">
+        <a href="#services"><sup>01</sup>Ako to funguje</a>
+        <a href="#promise"><sup>02</sup>Výhody</a>
+        <span class="hero__nav-logo" aria-hidden="true"><span class="logo"></span></span>
+        <a href="#work"><sup>03</sup>Práce</a>
+        <a href="#references"><sup>04</sup>FAQ</a>
+        <!-- V3: where you are on the page, one segment under each link -->
+        <span class="hero__nav-progress" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      </nav>
+
+      <!-- Stage: the scroll range over which the statue grows and turns; its side texts and buttons -->
       <section class="stage" data-stage data-hero-version="2">
         <div class="stage__sticky">
-          <canvas class="hero__three"></canvas>
           <p class="stage__side stage__side--l" data-stage-side>Grafika presne vtedy, keď ju potrebujete. Nie vtedy, keď má grafik čas.</p>
           <p class="stage__side stage__side--r" data-stage-side>Fixná cena, ktorú môžete pozastaviť alebo zrušiť kedykoľvek.</p>
           <div class="stage__cta" data-stage-cta>
@@ -119,7 +123,68 @@
       </section>
 
       <!-- Statement -->
-      <section class="statement" id="promise">
+      <!-- Výhody (V3): the benefits one at a time, big in the middle of a sticky
+           screen, while pictures fly past out of the depth (placeholder photos
+           from Unsplash via Lorem Picsum for now) -->
+      <section class="perks" id="promise" data-versions="3" data-perks>
+        <div class="perks__sticky">
+          <div class="perks__flight" aria-hidden="true" data-perks-flight>
+            <img src="https://picsum.photos/id/1015/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1016/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1018/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1019/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1025/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1031/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1035/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1036/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1039/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1040/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1043/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1044/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1047/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1050/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1057/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1062/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1069/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+            <img src="https://picsum.photos/id/1074/480/600?grayscale" alt="" loading="lazy" decoding="async" />
+          </div>
+          <div class="perks__body">
+            <h2 class="perks__label">Výhody</h2>
+            <ol class="perks__list">
+              <li class="perks__item">
+                <h3 class="perks__title">Rýchlosť a flexibilita</h3>
+                <p class="perks__text">Vymeňte interného grafika za externého. Bez starostí.</p>
+              </li>
+              <li class="perks__item">
+                <h3 class="perks__title">Bez zbytočných limitov</h3>
+                <p class="perks__text">Dizajn upravujeme dovtedy, kým nebudete úplne spokojní – bez obmedzení a zbytočných prekážok.</p>
+              </li>
+              <li class="perks__item">
+                <h3 class="perks__title">Rýchle dodanie</h3>
+                <p class="perks__text">Zadáte úlohu, hotový návrh máte v priemere do 2 pracovných dní.</p>
+              </li>
+              <li class="perks__item">
+                <h3 class="perks__title">Dizajn je kompletne vo vašom vlastníctve.</h3>
+                <p class="perks__text">Všetky výstupy patria vám a môžete ich používať bez akýchkoľvek obmedzení vrátane open dát</p>
+              </li>
+              <li class="perks__item">
+                <h3 class="perks__title">Pozastavíte kedykoľvek</h3>
+                <p class="perks__text">No more requests? Pause and bank whatever time you have left over, and use it anytime.</p>
+              </li>
+              <li class="perks__item">
+                <h3 class="perks__title">Prehľadná spolupráca cez task manager Trello.</h3>
+                <p class="perks__text">Všetky dizajnové úlohy máte prehľadne na jednom mieste. Vždy viete, čo sa rieši a v akom je to stave.</p>
+              </li>
+              <li class="perks__item">
+                <h3 class="perks__title">Prístup pre celý tím</h3>
+                <p class="perks__text">Pozvite celý tím! Každý môže zadávať požiadavky, sledovať priebeh a spravovať úlohy.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="statement" id="promise" data-versions="1 2">
         <p class="statement__text">
           <strong>Most businesses don't fail because of bad ideas.</strong>
           They fail because of stupid communication.
@@ -168,7 +233,28 @@
       </section>
 
       <!-- Work -->
-      <section class="work" id="work">
+      <!-- Work (V3): a statement across the screen; moving the cursor over it
+           leaves a trail of the latest works (touch screens get them as a grid) -->
+      <section class="showcase" id="work" data-versions="3" data-showcase>
+        <h2 class="showcase__statement">Posledné práce. Od brandingu cez weby až po marketingové materiály. Všetko v rámci jedného mesačného paušálu.</h2>
+        <ul class="showcase__works" data-showcase-works>
+          <li><img src="https://framerusercontent.com/images/oI9Gv83bknvpuogGny0e1BZZ4.webp?scale-down-to=1024" alt="Webdizajn" loading="lazy" decoding="async" /></li>
+          <li><img src="https://framerusercontent.com/images/8JpK7CPf4p3bTP7KjKpIEYg6AsI.jpg?scale-down-to=1024" alt="Billboard" loading="lazy" decoding="async" /></li>
+          <li><img src="https://framerusercontent.com/images/Il0jqgVdHB7Al40zIFZSGZfxywE.jpg?scale-down-to=1024" alt="Plagát" loading="lazy" decoding="async" /></li>
+          <li><img src="https://framerusercontent.com/images/tvUPCxopZ378xb9hVbrDFZhfY.jpg?scale-down-to=1024" alt="Brožúra" loading="lazy" decoding="async" /></li>
+          <li><img src="https://framerusercontent.com/images/TM5gvrzMBkpG4WrfTjcaV3gw.jpg?scale-down-to=1024" alt="Webová aplikácia" loading="lazy" decoding="async" /></li>
+          <li><img src="https://framerusercontent.com/images/I64yt2LRAorSJkWwXr5VPAjDxWM.png?scale-down-to=1024" alt="Produktová vizualizácia" loading="lazy" decoding="async" /></li>
+        </ul>
+        <div class="showcase__foot">
+          <p class="showcase__note">Product design, weby, landing pages, logá.</p>
+          <p class="showcase__note">Sociálne siete, pitch decky, <span class="showcase__nobr">e-maily,</span> thumbnaily.</p>
+          <a class="showcase__note showcase__more" href="https://www.figma.com/proto/QNfXcIRd8jJSwYILmkdM0S/Whad-pitchdeck-web?page-id=0%3A1&amp;node-id=1-2&amp;p=f&amp;viewport=293%2C268%2C0.06&amp;t=jqSCJI9W8EJzHRDu-1&amp;scaling=scale-down&amp;content-scaling=fixed" target="_blank" rel="noopener">Viac našich prác</a>
+        </div>
+        <div class="showcase__trail" aria-hidden="true" data-showcase-trail></div>
+        <span class="showcase__cursor" aria-hidden="true" data-showcase-cursor>[ pohnite kurzorom ]</span>
+      </section>
+
+      <section class="work" id="work" data-versions="1 2">
         <div class="work__head">
           <div>
             <h2 class="section-title"><strong>Naše</strong> posledné <strong>práce</strong></h2>
@@ -370,6 +456,7 @@
         <span class="version-tab__label">Hero verzia</span>
         <a href="?v=1" data-version="1">V1</a>
         <a href="?v=2" data-version="2">V2</a>
+        <a href="?v=3" data-version="3">V3</a>
       </nav>
     </aside>
 
