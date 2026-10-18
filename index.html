@@ -6,8 +6,8 @@
     <title>whad — externý grafický team</title>
     <link rel="icon" type="image/svg+xml" href="./whad-logo.svg" />
     <meta name="description" content="Design, engineering and AI automation for the world's biggest brands." />
-    <script type="module" crossorigin src="./assets/index-CV2NnUtm.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CyYbPxmS.css">
+    <script type="module" crossorigin src="./assets/index-dkOvykuZ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-X5JtTS9R.css">
   </head>
   <body>
     <div class="page">
@@ -128,55 +128,74 @@
            from Unsplash via Lorem Picsum for now) -->
       <section class="perks" id="promise" data-versions="3" data-perks>
         <div class="perks__sticky">
-          <div class="perks__flight" aria-hidden="true" data-perks-flight>
-            <img src="https://picsum.photos/id/1015/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1016/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1018/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1019/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1025/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1031/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1035/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1036/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1039/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1040/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1043/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1044/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1047/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1050/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1057/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1062/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1069/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-            <img src="https://picsum.photos/id/1074/480/600?grayscale" alt="" loading="lazy" decoding="async" />
-          </div>
+          <!-- the pictures flying past (JS draws them in the canvas) -->
+          <canvas class="perks__flight" aria-hidden="true" data-perks-flight></canvas>
+          <template data-perks-shots>
+            <img src="https://picsum.photos/id/1015/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1016/640/800" width="640" height="800" alt="" />
+            <img src="https://picsum.photos/id/1018/900/600" width="900" height="600" alt="" />
+            <img src="https://picsum.photos/id/1019/720/720" width="720" height="720" alt="" />
+            <img src="https://picsum.photos/id/1025/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1031/900/600" width="900" height="600" alt="" />
+            <img src="https://picsum.photos/id/1035/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1036/640/800" width="640" height="800" alt="" />
+            <img src="https://picsum.photos/id/1039/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1040/720/720" width="720" height="720" alt="" />
+            <img src="https://picsum.photos/id/1043/640/800" width="640" height="800" alt="" />
+            <img src="https://picsum.photos/id/1044/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1047/720/720" width="720" height="720" alt="" />
+            <img src="https://picsum.photos/id/1050/900/600" width="900" height="600" alt="" />
+            <img src="https://picsum.photos/id/1057/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1062/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1069/900/600" width="900" height="600" alt="" />
+            <img src="https://picsum.photos/id/1074/640/800" width="640" height="800" alt="" />
+            <img src="https://picsum.photos/id/1001/720/720" width="720" height="720" alt="" />
+            <img src="https://picsum.photos/id/1002/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1003/720/720" width="720" height="720" alt="" />
+            <img src="https://picsum.photos/id/1004/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1005/900/600" width="900" height="600" alt="" />
+            <img src="https://picsum.photos/id/1006/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1008/640/800" width="640" height="800" alt="" />
+            <img src="https://picsum.photos/id/1009/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1010/640/800" width="640" height="800" alt="" />
+            <img src="https://picsum.photos/id/1011/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1012/900/600" width="900" height="600" alt="" />
+            <img src="https://picsum.photos/id/1013/720/720" width="720" height="720" alt="" />
+            <img src="https://picsum.photos/id/1014/900/600" width="900" height="600" alt="" />
+            <img src="https://picsum.photos/id/1020/720/720" width="720" height="720" alt="" />
+            <img src="https://picsum.photos/id/1021/960/600" width="960" height="600" alt="" />
+            <img src="https://picsum.photos/id/1022/640/800" width="640" height="800" alt="" />
+            <img src="https://picsum.photos/id/1024/960/600" width="960" height="600" alt="" />
+          </template>
           <div class="perks__body">
             <h2 class="perks__label">Výhody</h2>
             <ol class="perks__list">
               <li class="perks__item">
-                <h3 class="perks__title">Rýchlosť a flexibilita</h3>
+                <h3 class="perks__title">Flexibilita</h3>
                 <p class="perks__text">Vymeňte interného grafika za externého. Bez starostí.</p>
               </li>
               <li class="perks__item">
-                <h3 class="perks__title">Bez zbytočných limitov</h3>
+                <h3 class="perks__title">Bez limitov</h3>
                 <p class="perks__text">Dizajn upravujeme dovtedy, kým nebudete úplne spokojní – bez obmedzení a zbytočných prekážok.</p>
               </li>
               <li class="perks__item">
-                <h3 class="perks__title">Rýchle dodanie</h3>
-                <p class="perks__text">Zadáte úlohu, hotový návrh máte v priemere do 2 pracovných dní.</p>
+                <h3 class="perks__title">Rýchlosť</h3>
+                <p class="perks__text">Zadáte úlohu, hotový návrh máte v priemere do 2&nbsp;pracovných dní.</p>
               </li>
               <li class="perks__item">
-                <h3 class="perks__title">Dizajn je kompletne vo vašom vlastníctve.</h3>
+                <h3 class="perks__title">Vlastníctvo</h3>
                 <p class="perks__text">Všetky výstupy patria vám a môžete ich používať bez akýchkoľvek obmedzení vrátane open dát</p>
               </li>
               <li class="perks__item">
-                <h3 class="perks__title">Pozastavíte kedykoľvek</h3>
+                <h3 class="perks__title">Pauza</h3>
                 <p class="perks__text">No more requests? Pause and bank whatever time you have left over, and use it anytime.</p>
               </li>
               <li class="perks__item">
-                <h3 class="perks__title">Prehľadná spolupráca cez task manager Trello.</h3>
-                <p class="perks__text">Všetky dizajnové úlohy máte prehľadne na jednom mieste. Vždy viete, čo sa rieši a v akom je to stave.</p>
+                <h3 class="perks__title">Prehľadnosť</h3>
+                <p class="perks__text">Všetky dizajnové úlohy máte cez Trello prehľadne na jednom mieste. Vždy viete, čo sa rieši a v akom je to stave.</p>
               </li>
               <li class="perks__item">
-                <h3 class="perks__title">Prístup pre celý tím</h3>
+                <h3 class="perks__title">Celý tím</h3>
                 <p class="perks__text">Pozvite celý tím! Každý môže zadávať požiadavky, sledovať priebeh a spravovať úlohy.</p>
               </li>
             </ol>
